@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Bebas+Neue&family=Bungee&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Proza+Libre&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background:#efefef;  
+  height:100vh;
+  width:100vw;
+}
+
+.container{
+  
+  height:100vh;
+  width:100vw;
+  margin-top: 3rem;
+  
+  display:flex;
+  justify-content:center;
+  /* align-items:center; */
+}
+
+.text-area{
+  width:400px;
+  height:400px;
+  text-align:center;
+  border:1px gray solid;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.text-area .verse{
+  font-size:1.3rem;
+  font-family: 'Amiri Quran', serif;
+}
+
+.translation{
+  margin-top: 2rem;
+  font-size:1.2rem;
+}
+
+.reference {
+  /* font-weight:bold; */
+  font-size:.8rem;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  margin-top:5rem;
+}
+
+.reference-number {
+    font-weight: bolder;
+}
+
+
