@@ -1,5 +1,5 @@
-const qoute = document.getElementById('area_to_screenshot')
-
+const qoute = document.getElementById('qoute')
+console.log('first run')
 const downloadImage = () => {
     console.log('inside download')
   html2canvas(qoute).then(canvas => {
@@ -12,4 +12,4 @@ const downloadImage = () => {
   });
 };
 
-qoute.addEventListener("click", downloadImage);
+document.getElementById('qoute').addEventListener("click", downloadImage);
