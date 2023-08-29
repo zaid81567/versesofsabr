@@ -1,5 +1,5 @@
 const container = document.querySelector(".container");
-const html2canvas = require("html2canvas");
+import html2canvas from "html2canvas";
 
 const downloadImage = () => {
     console.log('inside download')
