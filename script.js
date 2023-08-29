@@ -1,5 +1,4 @@
 const container = document.querySelector(".container");
-import html2canvas from "html2canvas";
 
 const downloadImage = () => {
     console.log('inside download')
