@@ -1,8 +1,8 @@
-const container = document.querySelector(".container");
+const qoute = document.getElementById('area_to_screenshot')
 
 const downloadImage = () => {
     console.log('inside download')
-  html2canvas(container).then(canvas => {
+  html2canvas(qoute).then(canvas => {
     console.log('inside download2')
     const dataURL = canvas.toDataURL("image/png");
     const anchor = document.createElement("a");
@@ -12,4 +12,4 @@ const downloadImage = () => {
   });
 };
 
-document.querySelector(".container").addEventListener("click", downloadImage);
+qoute.addEventListener("click", downloadImage);
