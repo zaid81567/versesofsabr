@@ -1,15 +1,15 @@
-const qoute = document.getElementById('qoute')
-console.log('first run')
+const qoute = document.getElementById('qoute');
+
 const downloadImage = () => {
-    console.log('inside download')
+  qoute.style.boxShadow = 'none';
   html2canvas(qoute).then(canvas => {
-    console.log('inside download2')
     const dataURL = canvas.toDataURL("image/png");
     const anchor = document.createElement("a");
     anchor.href = dataURL;
     anchor.download = "verses-of-sabr.png";
     anchor.click();
   });
+  qoute.style.boxShadow = "0 0 5px 4px rgba(0,0,0,0.1)";
 };
 
 document.getElementById('qoute').addEventListener("click", downloadImage);

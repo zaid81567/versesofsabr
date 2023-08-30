@@ -6,17 +6,56 @@
     <title>VersesOfSabr</title>
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://kit.fontawesome.com/60953a8dca.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="scripts/generate_qoute.js" defer></script>
+    <script src="scripts/screenshot.js" defer></script>
+    <script src="scripts/changeFontSize.js" defer></script>
 
 </head>
 <body>
-    <div class="container">
-        <div class="text-area" id="qoute">
-          <p class='verse'>وَأَسِرُّوا۟ قَوْلَكُمْ أَوِ ٱجْهَرُوا۟ بِهِۦٓ ۖ إِنَّهُۥ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ</p>
-          <p class="translation">Whether you speak secretly or openly , He surely knows best what is `hidden` in the heart.</p>
-          <p class="reference">Al-Jin <span class="reference-number">72:1</span></p>
+
+    <header>
+      <nav class="container">
+        <h1>@Verses Of Sabr</h1>
+      </nav>
+    </header>
+
+    <div class="form-container container">
+      <form>
+        <div class="form-group">
+            <label for="verse">Verse</label>
+            <input type="text" id="verse" name="verse" placeholder="Paste the verse .." required>
         </div>
+        <div class="form-group">
+            <label for="translation">Translation</label>
+            <input type="text" id="translation" name="translation" placeholder="Paste the translation ..">
+        </div>
+        <div class="form-group">
+            <label for="surah">Surah</label>
+            <input type="text" id="surah" name="surah" placeholder="Enter the Surah number ..">
+        </div>
+        <div class="form-group">
+          <label for="ayah">Ayah</label>
+          <input type="text" id="ayah" name="ayah" placeholder="Enter the ayah number ..">
       </div>
+        <button type="button" id="generate_qoute_btn">Generate</button>
+    </form>
+    </div>
+
+    <div class="qoute-container container">
+      <div class="text-area" id="qoute">
+        <p class='verse' id="verse_on_qoute">وَأَسِرُّوا۟ قَوْلَكُمْ أَوِ ٱجْهَرُوا۟ بِهِۦٓ ۖ إِنَّهُۥ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ</p>
+        <p class="translation" id="translation_on_qoute">Whether you speak secretly or openly , He surely knows best what is `hidden` in the heart.</p>
+        <p class="reference" id="reference_on_qoute">Al-Jin <span>72:1</span></p>
+      </div>
+      <div class="font-size-change" id="change-font-size-container">
+        <i class="fa-solid fa-plus" id="plus"></i>
+        <i class="fa-solid fa-minus" id="minus"></i>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
 </body>
 </html>
