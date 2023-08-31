@@ -72,9 +72,12 @@ form button {
 }
 
 form button:hover {
-    background-color: #000000;
-    box-shadow: 4px 4px rgb(157, 157, 157);
-    color: white;
+    background-color: #ffffff;
+}
+
+form button:active {
+    transform: translate(4px,4px);
+    box-shadow: none;
 }
 
 /* qoute */
