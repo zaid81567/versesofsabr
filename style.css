@@ -147,7 +147,7 @@ form button:active {
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.font-size-change i:hover {
+.font-size-change i:active {
     box-shadow: inset 0 0 4px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -155,6 +155,14 @@ form button:active {
 .spacer {
     height: 20vh;
 }
+
+
+
+
+
+
+
+
 
 /* media-queries */
 @media (min-width: 550px) {
